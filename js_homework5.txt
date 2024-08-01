@@ -1,0 +1,17 @@
+const obj = {
+    name: 'Wayne',
+    lastname: 'Ronaldo',
+    year: 1990,
+    
+    getInfo: function() {
+        for (const key in this) {
+            if (this.hasOwnProperty(key) && key !== 'getInfo') {
+                console.log(`${key}: ${this[key]}`);
+            }
+        }
+    }
+};
+
+obj.getInfo();
+obj.newProperty = 'Нова властивість!';
+obj.getInfo();
