@@ -1,0 +1,4 @@
+const text = "Memorable, Olympics, Closing, Ceremony, Alina, Windows";
+const pattern = /\b[^Aa\s]{6,}\b/g;
+const result = text.match(pattern);
+console.log(result);
